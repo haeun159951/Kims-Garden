@@ -1,0 +1,152 @@
+/* * Add any CSS you need to this file. */
+html,
+body {
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+
+/* header and header backgrund */
+
+header {
+  width: 100%;
+}
+header img {
+  margin-top: 2%;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.7;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+header .desc {
+  font-family: 'Sen', sans-serif;
+  color: palevioletred;
+  font-weight: bold;
+  font-size: 1.3em;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Menu Top */
+
+.nav-link {
+  font-family: 'Allerta Stencil', sans-serif;
+  color: palevioletred;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* intro */
+.desc-2 {
+  font-family: 'Sen', sans-serif;
+  color: #587620;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* products layout*/
+.green {
+  border: 1px solid #587620;
+}
+.garden {
+  margin-bottom: 5%;
+}
+.card-title {
+  font-family: 'Sen', sans-serif;
+}
+
+.card-text {
+  font-family: 'Merriweather', serif;
+  font-size: 0.7em;
+}
+.text-muted {
+  font-family: 'Merriweather', serif;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* FOOTER  */
+footer {
+  width: 100%;
+  background-color: whitesmoke;
+}
+.sub-desc {
+  font-weight: bold;
+  font-family: 'Allerta Stencil', sans-serif;
+  color: palevioletred;
+  text-align: center;
+}
+.subscribe {
+  font-family: 'Raleway', sans-serif;
+  color: #b8b9bd;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p.copyright {
+  font-family: 'Raleway', sans-serif;
+  color: #b8b9bd;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/*COMMON*/
+a:hover {
+  color: #587620;
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0px #587620;
+  border-radius: 3px;
+}
+
+/* contact css */
+
+.container h2 {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: palevioletred;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+input[type='submit'],
+input[type='reset'] {
+  width: 100px;
+  background-color: palevioletred;
+  color: white;
+}
+
+input[type='submit']:hover,
+input[type='submit']:focus,
+input[type='reset']:hover,
+input[type='reset']:focus {
+  background-color: #e67567;
+}
+.buttons {
+  padding-bottom: 5%;
+  text-align: right;
+}

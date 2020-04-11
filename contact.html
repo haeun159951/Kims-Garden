@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>kim's garden - Contact</title>
+    <!--Store logo-->
+    <link rel="shortcut icon" href="images/ksg.png" />
+    <!--bootstrap start-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--Three google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+    <!--custom CSS-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <!--Header and Top NavBar-->
+    <header>
+      <a href="index.html"
+        ><img src="./images/title.jpg" width="300" height="80" class="mx-auto d-block"
+      /></a>
+
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="tree-link" class="nav-link" href="#Trees">Trees</a>
+        </li>
+        <li class="nav-item">
+          <a id="flower-link" class="nav-link" href="#flowers">Flowers</a>
+        </li>
+        <li class="nav-item">
+          <a id="produce-link" class="nav-link" href="#Produces">Produce</a>
+        </li>
+        <li class="nav-item">
+          <a id="tool-link" class="nav-link" href="#Tools">Gardening Tools</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <p class="desc">Create your own little paradise with kim's</p>
+      <div class="bg"></div>
+    </header>
+
+    <!--Form-->
+    <div class="container">
+      <h2>Sign up for Your Information</h2>
+
+      <form id="signup-form" action="https://httpbin.org/post" method="post" class="contact">
+        <div class="row">
+          <div class="form-group col">
+            <label for="firstName"> <span class="text-danger">*</span>First Name</label>
+            <input
+              class="form-control"
+              id="firstName"
+              name="firstName"
+              autocomplete="given-name"
+              type="text"
+              autofocus
+              tabindex="1"
+              required
+            />
+          </div>
+          <div class="form-group col">
+            <label for="lastName"> <span class="text-danger">*</span>Last Name</label>
+            <input
+              class="form-control"
+              id="lastName"
+              name="lastName"
+              autocomplete="family-name"
+              type="text"
+              tabindex="2"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col">
+            <label for="email"><span class="text-danger">*</span>Email</label>
+            <input
+              id="email"
+              class="form-control"
+              name="email"
+              autocomplete="email"
+              type="email"
+              tabindex="3"
+              required
+            />
+          </div>
+          <div class="form-group col">
+            <label for="phone"><span class="text-danger">*</span>Phone Number</label>
+            <input
+              id="phone"
+              class="form-control"
+              name="phone"
+              autocomplete="tel"
+              type="tel"
+              title=" Please enter the Canadian number"
+              tabindex="4"
+              maxlength="20"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col">
+            <label for="address"> <span class="text-danger">*</span>Address</label>
+            <input
+              id="address"
+              class="form-control"
+              name="address"
+              autocomplete="street-address"
+              type="text"
+              tabindex="5"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col">
+            <label for="city"> <span class="text-danger">*</span>City</label>
+            <input
+              id="city"
+              class="form-control"
+              name="city"
+              autocomplete="address-level2"
+              type="text"
+              tabindex="6"
+              list="cities"
+              required
+            />
+            <datalist id="cities">
+              <option value="Toronto"> </option>
+              <option value="Vancouver"> </option>
+              <option value="Montreal"> </option>
+              <option value="Calgary"> </option>
+              <option value="Ottawa"> </option>
+            </datalist>
+          </div>
+
+          <div class="form-group col">
+            <label for="postal-code"> <span class="text-danger">*</span>Postal Code</label>
+            <input
+              id="postal-code"
+              class="form-control"
+              name="postal-code"
+              autocomplete="postal-code"
+              type="text"
+              tabindex="9"
+              title=" Please enter the valid Canada Zip Code"
+              maxlength="8"
+              pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
+              required
+            />
+          </div>
+        </div>
+
+        <label for="check">Would You Like To Be Phoned?</label>
+        <input id="check" type="checkbox" tabindex="8" checked="" />
+
+        <div class="row">
+          <div class="form-group col">
+            <label class="mr-3"> Help:</label>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="help"
+                id="help-question"
+                value="question"
+                tabindex="11"
+                onclick="hide()"
+              />
+              <label class="form-check-label" for="help-question">Question</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="help"
+                id="help-comment"
+                value="comment"
+                tabindex="12"
+                onclick="hide()"
+              />
+              <label class="form-check-label" for="help-question">Comment</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="help"
+                id="help-problem"
+                value="orderProblem"
+                tabindex="13"
+                onclick="hide()"
+              />
+              <label class="form-check-label" for="help-question">Order-Problem</label>
+
+              <div class="form-check form-check-inline" id="orderNumber" style="display: none">
+                <p style="margin-left:10%;">Enter the order number</p>
+                <input
+                  type="text"
+                  id="order-box"
+                  style="margin-left:10%; border: 3px solid lightgray"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col">
+            <label for="feedback-file">FeedBack</label>
+            <textarea
+              id="description"
+              class="form-control"
+              name="description"
+              rows="5"
+              tabindex="14"
+              placeholder="What's happening? I'm having a problem with the... "
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <input class="btn btn-primary" type="submit" name="submit" value="Submit" tabindex="15" />
+          <input
+            class="btn btn-secondary mr-3"
+            type="reset"
+            name="reset"
+            value="Reset"
+            tabindex="16"
+          />
+        </div>
+
+        <input id="prodId" name="prodId" type="hidden" value="Haeun Kim" />
+      </form>
+    </div>
+
+    <footer class="foot">
+      <form action="https://formspree.io/xqklnojv" method="POST">
+        <p class="sub-desc">Subscribe to our Newsletter</p>
+
+        <div class="subscribe">
+          <label>
+            Your Email:
+            <input type="email" name="_replyto" />
+          </label>
+          <input type="submit" value="Subscribe" />
+        </div>
+      </form>
+      <p class="copyright">
+        Name: Haeun Kim &nbsp &nbsp Dated: April 17, 2020 <br />
+        &#9400; copyright 2020 Haeun Kim
+      </p>
+    </footer>
+    <!--bootstrap END-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!--JS-->
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!--    
+
+    Part 2: Contact Us Page
+
+    Requirements:
+
+    1. Use the same header/footer, colours, fonts, etc. as your index.html page.
+    It should be obvious to the user they they are still on the same site, and that
+    contact.html is part of your store.
+
+    2. Include an HTML Form for the user to fill out his or her information along
+    with their message to you. Your form should including the following, and all
+    fields should be mandatory unless otherwise noted, and use the most appropriate <input> type:
+    
+        - First Name
+        - Last Name
+        - Email Address
+        - Address
+        - City (use a <datalist> for autocomplete of common Canadian cities)
+        - Phone Number (must be a valid Canadian Phone Number, use regex)
+        - Postal Code (must be a valid Canadian Postal Code, use regex)
+        - Checkbox Option to be phoned ("Would you like to be phoned?")
+        - Radio Options to specify what this is about: one of "Question",
+          "Comment", or "Order Problem". If the user selects "Order Problem",
+          dynamically reveal another input box to enter the order number. In the
+          case of "Comment" or "Question" hide this input box.
+        - A large area to enter the message that they want to send
+        - A hidden input field with your name
+
+    3. The form should submit to https://httpbin.org/post using the POST method,
+    and only allow the user to submit when all data has been entered and there
+    aren't any validation errors.  The data posted to httpbin.org should include
+    all data defined in the form above (e.g., visible and hidden fields).
+
+  -->
