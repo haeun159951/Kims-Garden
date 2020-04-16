@@ -9,7 +9,7 @@ body {
 /* header and header backgrund */
 
 header {
-  width: 100%;
+ 
   position: relative;
 }
 header img {
@@ -124,7 +124,7 @@ a:hover {
   border-radius: 3px;
 }
 
-/* contact css */
+/* Contact css */
 
 .container h2 {
   font-family: 'Allerta Stencil', sans-serif;
