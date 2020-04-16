@@ -9,7 +9,6 @@ body {
 /* header and header backgrund */
 
 header {
- 
   position: relative;
 }
 header img {
@@ -109,8 +108,7 @@ p.copyright {
 }
 
 input[type='email'],
-input[type='submit']
-{
+input[type='submit'] {
   border-radius: 5px;
 }
 /*COMMON*/
