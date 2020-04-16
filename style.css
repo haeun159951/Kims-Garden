@@ -10,6 +10,7 @@ body {
 
 header {
   width: 100%;
+  position: relative;
 }
 header img {
   margin-top: 2%;
@@ -23,15 +24,14 @@ header img {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-
-header .desc {
+.desc {
   font-family: 'Sen', sans-serif;
   color: palevioletred;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.7vw;
   position: absolute;
   text-align: center;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -94,7 +94,6 @@ footer {
 }
 .subscribe {
   font-family: 'Raleway', sans-serif;
-  color: #b8b9bd;
   display: inline-block;
   position: relative;
   left: 50%;
@@ -103,13 +102,17 @@ footer {
 
 p.copyright {
   font-family: 'Raleway', sans-serif;
-  color: #b8b9bd;
+  color: #0c171d;
   font-size: 0.8em;
   text-align: center;
-  font-weight: bold;
   margin-bottom: 0;
 }
 
+input[type='email'],
+input[type='submit']
+{
+  border-radius: 5px;
+}
 /*COMMON*/
 a:hover {
   color: #587620;

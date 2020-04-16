@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -31,7 +31,12 @@
     <!--Header and Top NavBar-->
     <header>
       <a href="index.html"
-        ><img src="./images/title.jpg" width="300" height="80" class="mx-auto d-block"
+        ><img
+          src="./images/title.jpg"
+          width="300"
+          height="80"
+          class="mx-auto d-block"
+          alt="title-logo"
       /></a>
 
       <ul class="nav justify-content-center">
@@ -88,6 +93,7 @@
               name="email"
               autocomplete="email"
               type="email"
+              placeholder="username@example.com"
               tabindex="3"
               required
             />
@@ -115,7 +121,6 @@
               id="address"
               class="form-control"
               name="address"
-              autocomplete="street-address"
               type="text"
               tabindex="5"
               required
@@ -176,7 +181,7 @@
                 id="help-question"
                 value="question"
                 tabindex="11"
-                onclick="hide()"
+                onclick="hideOption()"
               />
               <label class="form-check-label" for="help-question">Question</label>
             </div>
@@ -188,7 +193,7 @@
                 id="help-comment"
                 value="comment"
                 tabindex="12"
-                onclick="hide()"
+                onclick="hideOption()"
               />
               <label class="form-check-label" for="help-question">Comment</label>
             </div>
@@ -200,7 +205,7 @@
                 id="help-problem"
                 value="orderProblem"
                 tabindex="13"
-                onclick="hide()"
+                onclick="hideOption()"
               />
               <label class="form-check-label" for="help-question">Order-Problem</label>
 
@@ -218,7 +223,7 @@
 
         <div class="row">
           <div class="form-group col">
-            <label for="feedback-file">FeedBack</label>
+            <label for="description">FeedBack</label>
             <textarea
               id="description"
               class="form-control"
@@ -258,8 +263,8 @@
         </div>
       </form>
       <p class="copyright">
-        Name: Haeun Kim &nbsp &nbsp Dated: April 17, 2020 <br />
-        &#9400; copyright 2020 Haeun Kim
+        Name: Haeun Kim Dated: April 17, 2020 <br />
+        © copyright 2020 Kim's garden
       </p>
     </footer>
     <!--bootstrap END-->

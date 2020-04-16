@@ -1,40 +1,40 @@
 /** Add any JavaScript you need to this file. */
 
-function hideAllProductList() {
+function hideProductLists() {
   let gardenProducts = document.getElementsByClassName('garden');
   Object.entries(gardenProducts).forEach(entry => {
     entry[1].style.display = 'none';
   });
 }
+
 let productID;
 function showProductList(productID) {
   let gardenProduct = document.getElementById(productID);
   gardenProduct.style.display = 'block';
 }
-
+/*1. nav - tree*/
 document.getElementById('tree-link').addEventListener('click', function() {
-  hideAllProductList();
+  hideProductLists();
   showProductList('tree-cards');
 });
-
+/*2. nav - flower*/
 document.getElementById('flower-link').addEventListener('click', function() {
-  hideAllProductList();
+  hideProductLists();
   showProductList('flower-cards');
 });
-
+/*3. nav - tool*/
 document.getElementById('tool-link').addEventListener('click', function() {
-  hideAllProductList();
+  hideProductLists();
   showProductList('tool-cards');
 });
-
+/*4. nav - produce*/
 document.getElementById('produce-link').addEventListener('click', function() {
-  hideAllProductList();
+  hideProductLists();
   showProductList('produce-cards');
 });
 
-/*Contact function*/
-
-function hide() {
+/*Contact -  order problem function*/
+function hideOption() {
   let problem = document.getElementById('help-problem');
   let text = document.getElementById('orderNumber');
   if (problem.checked === true) {
@@ -46,12 +46,9 @@ function hide() {
 
 function checkValidate() {
   let form = document.querySelector('#signup-form');
-
   form.onsubmit = function(event) {
-    //1. check if the form is valid
     if (!form.checkValidity()) {
       form.classList.add('was-validated');
-
       event.preventDefault();
       return false;
     }
@@ -60,8 +57,8 @@ function checkValidate() {
 }
 
 window.onload = function() {
-  hide();
+  hideOption();
   checkValidate();
-  hideAllProductList();
+  hideProductLists();
   showProductList(productID);
 };
